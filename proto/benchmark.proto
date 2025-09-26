@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package benchmark;
+
+// Benchmark request with timestamp
+message BenchmarkRequest {
+  uint64 timestamp_nanos = 1;  // Sender timestamp in nanoseconds
+  string payload = 2;          // Optional payload for testing different sizes
+}
+
+// Benchmark response with elapsed time
+message BenchmarkResponse {
+  uint64 elapsed_microseconds = 1;  // Elapsed time in microseconds
+  bool success = 2;                 // Whether the operation was successful
+}
+
+// Benchmark service
+service BenchmarkService {
+  rpc SendTimestamp(BenchmarkRequest) returns (BenchmarkResponse);
+}

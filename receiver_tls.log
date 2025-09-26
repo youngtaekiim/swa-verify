@@ -1,0 +1,3 @@
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.07s
+     Running `target/debug/benchmark-receiver --tls`
+Benchmark Receiver starting with TLS on [::1]:50051

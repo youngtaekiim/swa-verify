@@ -1,0 +1,3 @@
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.07s
+     Running `target/debug/benchmark-receiver`
+Benchmark Receiver starting without TLS on [::1]:50051

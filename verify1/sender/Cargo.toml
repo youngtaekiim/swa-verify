@@ -1,0 +1,16 @@
+[package]
+name = "sender"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+tonic = "0.12.3"
+serde = { version = "1.0", features = ["derive"] }
+serde_yaml = "0.9"
+etcd-client = "0.7"
+prost = "0.13.3"
+chrono = "0.4"
+
+[build-dependencies]
+tonic-build = "0.12.3"
